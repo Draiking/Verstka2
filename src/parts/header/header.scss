@@ -1,0 +1,16 @@
+.main-head{
+  min-height: 620px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #394b5f;
+    opacity: .85;
+  }}
+
