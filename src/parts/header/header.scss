@@ -1,9 +1,10 @@
-.main-head{
+.main-head {
   min-height: 620px;
   background-size: cover;
   background-position: center;
   position: relative;
   color: #f39f18;
+
   &::before {
     content: '';
     width: 100%;
@@ -13,7 +14,8 @@
     right: 0;
     background-color: #394b5f;
     opacity: .85;
-  }}
+  }
+}
 
 .top-line {
   padding-top: 45px;
@@ -22,7 +24,7 @@
   background-repeat: repeat-x;
 }
 
-.logo img{
+.logo img {
   opacity: .95;
   width: 100px;
 }
@@ -41,11 +43,14 @@
 .main-menu li {
   display: inline-block;
   line-height: 48px;
+
   &.active {
     a {
       color: #F39F18;
       text-decoration: underline;
-}}}
+    }
+  }
+}
 
 .main-menu a {
   color: #FFFFFF;
@@ -59,6 +64,7 @@
 
 .phone-wrap {
   position: relative;
+
   .phone {
     opacity: 0.9;
     color: #fff;
@@ -67,19 +73,20 @@
     text-align: right;
     white-space: nowrap;
   }
+
+  .toggle-menu {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+  }
 }
 
-.toggle-menu {
-  display: block;
-  float: right;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  line-height: 48px;
-}
 
 .toggle-menu {
   display: block;
@@ -95,9 +102,11 @@
   left: 0;
   top: -9px;
 }
-.toggle-menu span:after{
+
+.toggle-menu span:after {
   top: 9px;
 }
+
 .toggle-menu span {
   position: relative;
   display: block;
@@ -114,25 +123,22 @@
   border-radius: 2px;
 }
 
-/* on activation */
 .toggle-menu.on span {
   background-color: transparent;
 }
+
 .toggle-menu.on span:before {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .toggle-menu.on span:after {
   transform: rotate(-45deg) translate(7px, -8px);
 }
+
 .toggle-menu.on + #menu {
   opacity: 1;
   visibility: visible;
 }
-
-
-
-
-
 
 
 @import "../../style/media";
