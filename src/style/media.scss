@@ -1,20 +1,15 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .main-menu {
-    display: block !important;
-  }
-}
-
 @media only screen and (max-width : 1200px) {
   .main-menu {
     display: none;
-    min-width: 320px;
+    min-width: 295px;
     float: right;
     text-align: right;
+    font-size: em(22px);
     background-color: #1c242c;
-
+    margin-top: 10px;
     ul{
       padding: 0;
       li{
@@ -25,6 +20,9 @@
           display: block;
           line-height: 48px;
           padding: 0 20px;
+          background-color: transparent;
+          font-size: em(18px);
+          transition: all .5s ease;
           &:hover {
             background-color: #273646;
           }
@@ -114,5 +112,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+  .main-menu {
+    display: block !important;
+    outline: none !important;
+  }
 }
