@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  color: #f39f18;
   &::before {
     content: '';
     width: 100%;
@@ -18,8 +19,39 @@
   padding-top: 45px;
   min-height: 160px;
   background-image: url(../../img/top_gradient.png);
+  background-repeat: repeat-x;
 }
 
 .logo img{
   width: 100px;
+}
+
+.top-menu {
+  font-size: em(14px);
+}
+
+.top-menu ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.top-menu li {
+  display: inline-block;
+  line-height: 48px;
+  &.active {
+    a {
+      color: #F39F18;
+      text-decoration: underline;
+}}}
+
+.top-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.top-menu a:hover {
+  color: #F39F18;
+  text-decoration: underline;
 }
