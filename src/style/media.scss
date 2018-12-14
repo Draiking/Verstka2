@@ -1,12 +1,47 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .main-menu {
+    display: block !important;
+  }
+}
+
 @media only screen and (max-width : 1200px) {
   .main-menu {
     display: none;
+    min-width: 320px;
+    float: right;
+    text-align: right;
+    background-color: #1c242c;
+
+    ul{
+      padding: 0;
+      li{
+        display: block;
+        line-height: 0;
+        padding: 0;
+        a {
+          display: block;
+          line-height: 48px;
+          padding: 0 20px;
+          &:hover {
+            background-color: #273646;
+          }
+        }
+      }
+    }
   }
+
   .phone {
     padding-right: 60px;
+  }
+
+  .toggle-menu {
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    top: 0px;
   }
 
 
@@ -41,14 +76,16 @@
 
   .toggle-menu {
     line-height: 34px;
-    width: 34px;
-    height: 34px;
+   margin-top: 15px;
   }
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+
+
 
 }
 

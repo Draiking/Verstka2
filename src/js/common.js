@@ -2,7 +2,15 @@ $(document).ready(function() {
 
 	$(".toggle-menu").click(function () {
 		$(this).toggleClass("on");
+		$(".main-menu").slideToggle();
 	});
+
+	$(function () {
+		$('.toggle-menu').click(function () {
+			$(".main-menu").removeClass('d-block')
+		})
+	});
+
 
 
 
