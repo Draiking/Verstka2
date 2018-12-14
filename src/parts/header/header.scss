@@ -23,21 +23,22 @@
 }
 
 .logo img{
+  opacity: .95;
   width: 100px;
 }
 
-.top-menu {
+.main-menu {
   font-size: em(14px);
 }
 
-.top-menu ul li {
+.main-menu ul li {
   list-style-type: none;
   padding: 0;
   margin: 0;
   padding: 0 8px;
 }
 
-.top-menu li {
+.main-menu li {
   display: inline-block;
   line-height: 48px;
   &.active {
@@ -46,12 +47,19 @@
       text-decoration: underline;
 }}}
 
-.top-menu a {
+.main-menu a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.top-menu a:hover {
+.main-menu a:hover {
   color: #F39F18;
   text-decoration: underline;
+}
+
+.phone {
+  opacity: 0.9;
+  color: #fff;
+  font-size: em(20px);
+  line-height: 48px;
 }
