@@ -1,10 +1,10 @@
+@import "../../libs/bourbon/app/assets/stylesheets/bourbon";
 .main-head {
   min-height: 620px;
   background-size: cover;
   background-position: center;
   position: relative;
   color: #fff;
-
   &::before {
     content: '';
     width: 100%;
@@ -43,7 +43,6 @@
 .main-menu li {
   display: inline-block;
   line-height: 48px;
-
   &.active {
     a {
       color: #F39F18;
@@ -64,7 +63,6 @@
 
 .phone-wrap {
   position: relative;
-
   .phone {
     opacity: 0.9;
     color: #fff;
@@ -138,6 +136,10 @@
   visibility: visible;
 }
 
+.header-left {
+  margin-bottom: 50px;
+}
+
 .header-wrap {
   margin-top: 40px;
   h1 {
@@ -180,5 +182,76 @@
   }
 }
 
+.forms {
+  opacity: 0.8;
+  min-width: 360px;
+  background-color: #243343;
+  padding: 35px 35px;
+  color: #97a4b2;
+  font-size: em(14px);
+  border-bottom: #1a222b 3px solid;
+  h4 {
+    color: #FFFFFF;
+    font-family: "PFCentroSlabProMedium";
+    font-size: em(34px);
+    text-transform: none;
+    margin: 0 0 3px;
+    p {
+      line-height: em(23px);
+      margin-top: 15px;
+      label {
+        margin-top: 22px;
+        margin-bottom: 20px;
+        display: block;
+        span {
+          display: block;
+          letter-spacing: 1.5px;
+          margin-bottom: 4px;
+          color: #778390;
+        }
+      }
+    }
+  }
+}
+
+.forms {
+  input {
+    display: block;
+    min-width: 290px;
+    border: none;
+    border-top: 3px #1F2A36 solid;
+    background-color: #34465A;
+    text-indent: 10px;
+    padding: 7px 0;
+    &:focus {
+      background-color: #394e65;
+    }
+  }
+}
+
+.button-wrap {
+  text-align: center;
+  button {
+    display: inline-block;
+    border: none;
+    background-color: #F39F18;
+    color: #111111;
+    font-size: em(22px);
+    font-family: "PFCentroSlabProBold";
+    padding: 12px 30px;
+    border-bottom: 3px #B97200 solid;
+    margin-top: 10px;
+    transition: all 5s ease;
+  }
+}
+
+.button-wrap button:hover{
+  background-color: #ffb338;;
+}
+
+.button-wrap button:active {
+  background-color: #DB8C0E;;
+}
+
+
 @import "../../style/media";
-@import "../../libs/bourbon/app/assets/stylesheets/bourbon";
