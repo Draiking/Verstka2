@@ -5,6 +5,7 @@
   background-position: center;
   position: relative;
   color: #fff;
+  padding-bottom: 120px;
   &::before {
     content: '';
     width: 100%;
@@ -144,11 +145,11 @@
   margin-top: 40px;
   h1 {
     margin-top: 120px;
-    font-size: em(48px);
+    margin-bottom: 12px;
     color: #FFFFFF;
     border-bottom: #F39F18 8px solid;
     display: inline-block;
-    padding-bottom: 22px;
+    padding-bottom: 10px;
   }
 }
 
@@ -184,12 +185,12 @@
 
 .forms {
   opacity: 0.8;
-  min-width: 360px;
   background-color: #243343;
   padding: 35px 35px;
   color: #97a4b2;
   font-size: em(14px);
   border-bottom: #1a222b 3px solid;
+  margin: 10px;
   h4 {
     color: #FFFFFF;
     font-family: "PFCentroSlabProMedium";
@@ -199,25 +200,28 @@
     p {
       line-height: em(23px);
       margin-top: 15px;
-      label {
-        margin-top: 22px;
-        margin-bottom: 20px;
-        display: block;
-        span {
-          display: block;
-          letter-spacing: 1.5px;
-          margin-bottom: 4px;
-          color: #778390;
-        }
-      }
     }
+  }
+}
+
+label {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  display: block;
+  span {
+    display: block;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+    color: #778390;
   }
 }
 
 .forms {
   input {
+    color: #fff;
+    font-size: 17px ;
     display: block;
-    min-width: 290px;
+    width: 100%;
     border: none;
     border-top: 3px #1F2A36 solid;
     background-color: #34465A;
@@ -251,6 +255,23 @@
 
 .button-wrap button:active {
   background-color: #DB8C0E;;
+}
+
+.arrow-bottom {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/arrow_down.png);
+  z-index: 2;
+  position: relative;
+  top: 50px;
+  opacity: .65;
+  cursor: pointer;
+  left: 50%;
+  transition: all .25s ease;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 
