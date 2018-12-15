@@ -63,7 +63,8 @@
     margin-top: 10px;
     border-bottom: #111821 4px solid;
     border-top: #232D3B 4px solid;
-    position: relative;
+    position: absolute;
+    top: 50px;
     right: 15px;
     z-index: 2;
   }
@@ -82,11 +83,40 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .main-menu {
+    display: none;
+    min-width: 295px;
+    float: right;
+    text-align: right;
+    background-color: #1c242c;
+    margin-top: 10px;
+    border-bottom: #111821 4px solid;
+    border-top: #232D3B 4px solid;
+    position: relative;
+    top: 0;
+    right: 15px;
+    z-index: 2;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+  .main-menu {
+    display: none;
+    min-width: 295px;
+    float: right;
+    text-align: right;
+    background-color: #1c242c;
+    margin-top: 10px;
+    border-bottom: #111821 4px solid;
+    border-top: #232D3B 4px solid;
+    position: relative;
+    right: 15px;
+    z-index: 2;
+    top: 0;
+  }
+
   .phone-wrap{
     .phone{
       font-size: em(16px);
