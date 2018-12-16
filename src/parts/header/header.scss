@@ -269,6 +269,7 @@ label {
   cursor: pointer;
   left: 50%;
   transition: all .25s ease;
+  transform: translateX(-50%);
   &:hover {
     opacity: 1;
   }
