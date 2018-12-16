@@ -3,18 +3,18 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
   .main-menu {
-    display: none;
+    display: block;
     min-width: 295px;
     float: right;
     text-align: right;
     background-color: #1c242c;
     margin-top: 10px;
-    border-bottom: #111821 4px solid;
-    border-top: #232D3B 4px solid;
+    border-bottom: $bottom-color 4px solid;
+    border-top: $top-color 4px solid;
     position: absolute;
-    top: 50px;
+    top: 0px;
     right: 15px;
-    z-index: 2;
+    z-index: 1000;
     ul{
       padding: 0;
       li{
@@ -37,6 +37,10 @@
     }
   }
 
+  .main-menu {
+    display: none;
+  }
+
   .phone {
     padding-right: 60px;
   }
@@ -55,6 +59,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+  .main-menu {
+    top: 50px;
+  }
 
   .header-wrap {
     margin-top: 0;
