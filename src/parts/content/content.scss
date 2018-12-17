@@ -1,3 +1,6 @@
+
+
+
 .homesect {
   padding-top: 70px;
   background-color: $homesect-color;
@@ -13,10 +16,56 @@ h2 {
     background-color: $main-color;
     width: 165px;
     display: block;
-    bottom: -34px;
+    bottom: -30px;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+}
+
+p {
+  a{
+    color: $main-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.section-head {
+  margin-bottom: 80px;
+  p{
+    margin-top: 60px;
+  }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-bottom {
+  margin-top: 70px;
+  background-color: $section-bottom;
+  padding: 50px 0;
+  text-align: center;
+  a{
+    text-decoration: none;
+  }
 }
-}
+
+
+@import "../../style/media";
