@@ -1,9 +1,15 @@
-
-
-
 .homesect {
   padding-top: 70px;
   background-color: $homesect-color;
+  position: relative;
+  &::before {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    background-image: url(../../img/bah_1.png);
+  }
 }
 
 h2 {
@@ -25,8 +31,11 @@ h2 {
 p {
   a{
     color: $main-color;
+    font-family: RalewaySemiBold;
+    text-decoration: underline;
     &:hover {
       color: $main-color;
+      text-decoration: none;
     }
   }
 }
@@ -38,12 +47,33 @@ p {
   }
 }
 
+.section-content {
+  min-height: 548px;
+}
 
+.section-content {
+  background-image: url(../../img/s1_gray_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  padding-bottom: 90px;
+}
 
+.s1_bottom_triangle {
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(../../img/s1_triangle.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
 
-
-
-
+.s1_bottom {
+  padding: 15px 0 65px;
+  background-color: $main-head-color;
+}
 
 
 
@@ -58,12 +88,12 @@ p {
 
 
 .section-bottom {
-  margin-top: 70px;
   background-color: $section-bottom;
   padding: 50px 0;
   text-align: center;
   a{
     text-decoration: none;
+    color: $button-color1;
   }
 }
 
