@@ -1,0 +1,22 @@
+.homesect {
+  padding-top: 70px;
+  background-color: $homesect-color;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: $main-color;
+    width: 165px;
+    display: block;
+    bottom: -34px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+
+}
+}

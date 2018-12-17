@@ -6,8 +6,13 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: "PFCentroSlabProBold";
   font-weight: bold;
+  line-height: em(22px);
 }
 
 h1 {
-  font-size: 50px;
+  font-size: em(48px);
+}
+
+h2 {
+  font-size: em(30px);
 }
