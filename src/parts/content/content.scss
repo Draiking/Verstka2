@@ -41,14 +41,10 @@ p {
 }
 
 .section-head {
-  margin-bottom: 80px;
+  margin-bottom: 65px;
   p{
     margin-top: 60px;
   }
-}
-
-.section-content {
-  min-height: 548px;
 }
 
 .section-content {
@@ -57,6 +53,7 @@ p {
   background-position: bottom;
   position: relative;
   padding-bottom: 90px;
+  min-height: 560px;
 }
 
 .s1_bottom_triangle {

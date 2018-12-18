@@ -78,11 +78,24 @@
     }
   }
 
+  .info-item {
+    margin: 40px 0;
+  }
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .info-item {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: $border_bottom 1px solid;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
 
 }
 
