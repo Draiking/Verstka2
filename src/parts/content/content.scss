@@ -218,8 +218,8 @@ p {
   .s2-item{
     .img_wrap{
       img {
-        max-width: 96px;
-        max-height: 80px;
+        max-width: 75px;
+        max-height: 60px;
       }
     }
   }
@@ -243,5 +243,14 @@ p {
   width: 185px;
 
 }
+
+
+.section-bottom2 {
+  padding: 50px ;
+  text-align: center;
+  background-color: $section-bottom2;
+}
+
+/* Конец 2 секции */
 
 @import "../../style/media";
