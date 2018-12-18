@@ -11,6 +11,8 @@ $(document).ready(function() {
 		})
 	});
 
+	$(".section-content .info-item").equalHeights();
+	$(".s1_bottom .info-item").equalHeights();
 
 
 
