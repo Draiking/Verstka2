@@ -178,7 +178,7 @@ p {
 
 
 .s2-items {
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   .s2-item {
     text-align: center;
     color: $button-color1;
@@ -239,6 +239,9 @@ p {
 .s2-item-wrap {
   display: inline-block;
   float: none;
+  padding: 0 15px;
+  width: 185px;
+
 }
 
 @import "../../style/media";
