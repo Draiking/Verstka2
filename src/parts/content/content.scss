@@ -68,6 +68,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  text-align: center;
 }
 
 .s1_bottom {
@@ -75,8 +76,34 @@ p {
   background-color: $main-head-color;
 }
 
+.info-item {
+  padding-left: 34px;
+  max-width: 264px;
+  line-height: em(19px);
+  margin: 56px 0;
+  font-family: RalewayRegular;
+  h4{
+    font-weight: lighter;
+    font-family: RalewayRegular;
+    margin-top: 0;
+    margin-bottom: 10px;
+    a{
+      font-size: em(20px);
+      text-transform: none;
+      text-decoration: underline;
+      line-height: em(13px);
+      p{
+        font-size: em(16px);
+      }
+    }
+  }
+}
 
-
+.info-item-wrap:nth-child(2) {
+  .info-item {
+    margin-top: 0px;
+  }
+}
 
 
 

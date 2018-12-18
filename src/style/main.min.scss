@@ -27,4 +27,11 @@
   }
 }
 
+a {
+  color: $main-color;
+  &:hover {
+    color: $main-color;
+  }
+}
+
 
