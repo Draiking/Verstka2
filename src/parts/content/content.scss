@@ -284,6 +284,7 @@ p {
   .section-content {
     min-height: 850px;
     background-image: url("../../img/s3_sun_bg.png");
+    background-position: center;
     padding-bottom: 0;
     padding-top: 60px;
   }
@@ -299,7 +300,7 @@ p {
 
 .s_dark{
   .info-item-wrap:nth-child(1) .info-item {
-    margin-left: 82px;
+    margin-left: 80px;
   }
 }
 
@@ -319,24 +320,35 @@ p {
 .s_dark{
   .info-item-wrap:nth-child(6) .info-item{
     margin-top: 50px;
-    margin-left: 82px;
+    margin-left: 80px;
   }
 }
 
 .s_dark{
   .info-item-wrap:nth-child(7) .info-item{
-    margin-left: 82px;
+    margin-left: 80px;
   }
 }
 
 .s_dark{
   .info-item-wrap:nth-child(8) .info-item{
-    margin-top: 170px;
+    margin-top: 150px;
     margin-left: 50px;
   }
 }
 
-
+.s3-img-wrap {
+  width: 130px;
+  height: 130px;
+  background-color: $main-color;
+  text-align: center;
+  border-radius: 10em;
+  margin: 57px 0 0 115px;
+  img {
+    width: 70px;
+    margin-top: 29px;
+  }
+}
 
 
 
