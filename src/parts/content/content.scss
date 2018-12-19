@@ -253,4 +253,40 @@ p {
 
 /* Конец 2 секции */
 
+.s_dark {
+  background-color: $section-bottom;
+  color: $white-color;
+  &:before {
+    background-image: url("../../img/bah_2.png");
+  }
+}
+
+.section_3 {
+  @extend .section_1
+}
+
+
+.s_dark {
+  .section-head {
+    p {
+      color: $section-bottom2;
+    }
+  }
+}
+
+.s_dark {
+  .section-bottom {
+    background-color: $main-head-color;
+  }
+}
+
+.s_dark {
+  .section-content {
+    min-height: 850px;
+    background-image: url("../../img/s3_sun_bg.png");
+  }
+}
+
+
+
 @import "../../style/media";
