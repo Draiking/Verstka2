@@ -285,8 +285,69 @@ p {
     min-height: 850px;
     background-image: url("../../img/s3_sun_bg.png");
     padding-bottom: 0;
+    padding-top: 60px;
   }
 }
+
+.s_dark {
+  .section-content {
+    .info-item {
+      margin-top: 80px;
+    }
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(1) .info-item {
+    margin-left: 82px;
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(2) .info-item {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(4) .info-item{
+    margin-top: 50px;
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(6) .info-item{
+    margin-top: 50px;
+    margin-left: 82px;
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(7) .info-item{
+    margin-left: 82px;
+  }
+}
+
+.s_dark{
+  .info-item-wrap:nth-child(8) .info-item{
+    margin-top: 170px;
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import "../../style/media";
