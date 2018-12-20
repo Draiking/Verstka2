@@ -13,6 +13,12 @@ $(document).ready(function() {
 
 	$(".section-content .info-item").equalHeights();
 	$(".s1_bottom .info-item").equalHeights();
+	$(".s1_bottom .info-item").equalHeights();
+
+
+	$(".section_4").waypoint(function () {
+		$(".section_4 .card").removeClass("card-off").addClass("card-on");
+	})
 
 
 

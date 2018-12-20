@@ -367,22 +367,27 @@ p {
 
 .s-gray {
   .section-pb {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
 .s-gray {
   .cards {
     text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
     .card {
       display: inline-block;
+      transition: all 1.5s ease;
       width: 260px;
       background-color: $section-bottom;
-      margin: 0 12px;
+      margin: 10px 12px;
       color: $forms-color1;
       font-size: em(15px);
       line-height: em(22px);
-      padding: 54px 28px 52px;
+      padding: 54px 28px 48px;
+      vertical-align: top;
         .car-icon {
           width: 120px;
           height: 120px;
@@ -393,7 +398,10 @@ p {
           img {
             width: 80px;
             position: relative;
-            top: 27px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
           }
         }
       }
@@ -406,14 +414,45 @@ p {
       color: $section-bottom2;
       font-family: "RalewaySemiBold";
       font-size: em(18px);
+      margin-top: 25px;
+    }
+  }
+}
+
+.s-gray {
+  .card {
+    p {
+      margin-bottom: 0;
+      strong {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+.s-gray {
+  .cards {
+    perspective: 600px;
+    .card {
+      &-off {
+        transform: rotateY(360deg);
+        opacity: 0;
+      }
     }
   }
 }
 
 
-
-
-
+.s-gray {
+  .cards {
+    perspective: 600px;
+    .card {
+      &-on {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 
 
