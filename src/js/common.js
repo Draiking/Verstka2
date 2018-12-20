@@ -16,9 +16,19 @@ $(document).ready(function() {
 	$(".s1_bottom .info-item").equalHeights();
 
 
-	$(".section_4").waypoint(function () {
-		$(".section_4 .card").removeClass("card-off").addClass("card-on");
-	})
+	$(".section_4").waypoint(function() {
+
+		$(".section_4 .card").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("card-off").addClass("card-on");
+			}, 200*index);
+		});
+
+	}, {
+		offset : "20%"
+	});
+
 
 
 

@@ -435,7 +435,7 @@ p {
     perspective: 600px;
     .card {
       &-off {
-        transform: rotateY(360deg);
+        transform: rotateY(100deg);
         opacity: 0;
       }
     }
