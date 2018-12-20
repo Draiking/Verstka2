@@ -54,6 +54,9 @@
   }
 
 
+  .s3-img-wrap {
+    margin-left: 82px;
+  }
 
 
 
@@ -83,6 +86,37 @@
     margin: 40px 0;
   }
 
+.s3-img-wrap{
+  display: none;
+}
+
+.section_3 {
+  .info-item-wrap{
+    .info-item {
+      margin: 0 0 30px!important;
+    }
+  }
+}
+
+  .s3-img-wrapper {
+    display: none;
+  }
+
+  .section_3 {
+    .section-content {
+      background-image: none;
+      min-height: auto;
+    }
+  }
+
+  .s3-items-container {
+    display: table-row;
+    .s3-items-wrap {
+      display: table-cell;
+    }
+  }
+
+
 }
 
 /* Small Devices, Tablets */
@@ -110,6 +144,25 @@
         border: none;
       }
    }
+
+
+  .section_3 {
+    .section-content {
+      padding-top: 10px;
+      .info-item {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
 
 }
 
@@ -139,6 +192,12 @@
     width: 140px;
   }
 
+  .s_dark {
+    .buttons {
+      margin: 0 20px 0 20px;
+      font-size: 15px;
+    }
+  }
 
 }
 
