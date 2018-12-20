@@ -350,7 +350,90 @@ p {
   }
 }
 
+/* Конец 3 секции */
 
+.s-gray {
+  background-color: $section-bottom2;
+  h3 {
+    color: $main-head-color;
+  }
+}
+
+.s-gray {
+  &::before {
+    background-image: url("../../img/bah_3.png");
+  }
+}
+
+.s-gray {
+  .section-pb {
+    padding-bottom: 70px;
+  }
+}
+
+.s-gray {
+  .cards {
+    text-align: center;
+    .card {
+      display: inline-block;
+      width: 260px;
+      background-color: $section-bottom;
+      margin: 0 12px;
+      color: $forms-color1;
+      font-size: em(15px);
+      line-height: em(22px);
+      padding: 54px 28px 52px;
+        .car-icon {
+          width: 120px;
+          height: 120px;
+          background-color: $main-color;
+          border-radius: 10em;
+          display: inline-block;
+          position: relative;
+          img {
+            width: 80px;
+            position: relative;
+            top: 27px;
+          }
+        }
+      }
+  }
+}
+
+.s-gray {
+  .card {
+    h4 {
+      color: $section-bottom2;
+      font-family: "RalewaySemiBold";
+      font-size: em(18px);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s-gray {
+  .section-bottom4 {
+    background-color: $section-bottom4;
+    margin-top: 60px;
+    padding: 50px ;
+    text-align: center;
+  }
+}
 
 
 
