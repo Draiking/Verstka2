@@ -16,16 +16,13 @@ $(document).ready(function() {
 	/* Установление высоты и ширины блока */
 
 	$(".section-content .info-item").equalHeights(); /* 1 секция (НЕЗАВИСИМАЯ ОЦЕНКА ИМУЩЕСТВА) */
-	$(".s1_bottom .info-item").equalHeights(); /* раздел 1 секции */
-
-
+	$(".s1-bottom .info-item").equalHeights(); /* раздел 1 секции */
 
     /* Поочередная открытие карт */
 
+	$(".section-4").waypoint(function() {
 
-	$(".section_4").waypoint(function() {
-
-		$(".section_4 .card").each(function(index) {
+		$(".section-4 .card").each(function(index) {
 			var ths = $(this);
 			setInterval(function() {
 				ths.removeClass("card-off").addClass("card-on");
@@ -35,9 +32,6 @@ $(document).ready(function() {
 	}, {
 		offset : "20%"
 	});
-
-
-
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

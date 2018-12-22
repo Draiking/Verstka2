@@ -3,7 +3,6 @@
   background-color: $homesect-color;
   position: relative;
   font-size: em(17px);
-
   &::before {
     content: "";
     height: 6px;
@@ -14,7 +13,8 @@
   }
 }
 
-.section_1 {
+.section-1 {
+  width: 100%;
   .section-content {
     background-image: url(../../img/s1_gray_bg.png);
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ p {
 }
 
 .info-item {
-  padding-left: 34px;
+  padding-left: 100px;
   max-width: 264px;
   line-height: em(19px);
   margin: 54px 0;
@@ -106,7 +106,7 @@ p {
   }
 }
 
-.s1_bottom_triangle {
+.s1-bottom-triangle {
   height: 90px;
   position: absolute;
   bottom: 0;
@@ -134,7 +134,7 @@ p {
   z-index: 0;
 }
 
-.s1_bottom {
+.s1-bottom {
   padding: 15px 0 65px;
   background-color: $main-head-color;
 
@@ -145,7 +145,7 @@ p {
   }
 }
 
-.s1_bottom {
+.s1-bottom {
   .info-item {
     margin: 15px 0 0;
 
@@ -168,320 +168,11 @@ p {
 }
 
 /* Конец 1 секции */
-
-.section-head {
-  h3 {
-    text-align: center;
-    margin-top: 50px;
-  }
-}
-
-
-.s2-items {
-  padding-bottom: 20px;
-  .s2-item {
-    text-align: center;
-    color: $button-color1;
-    margin-bottom: 75px;
-    display: block;
-    > span {
-      display: block;
-    }
-  }
-}
-
-.img_wrap {
-  padding-bottom: 32px;
-  margin-bottom: 12px;
-  display: block;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    height: 1px;
-    background-color: $main-color;
-    width: 58px;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-.s2-item{
-  .s2-item-text{
-    font-family: "RalewaySemiBold";
-    font-size: em(14px);
-    line-height: em(20px);
-  }
-}
-
-.s2-items {
-  .s2-item{
-    .img_wrap{
-      img {
-        max-width: 75px;
-        max-height: 60px;
-      }
-    }
-  }
-}
-
-.img_wrap {
-  img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.s2-item-container {
-  text-align: center;
-}
-
-.s2-item-wrap {
-  display: inline-block;
-  float: none;
-  padding: 0 15px;
-  width: 185px;
-
-}
-
-
-.section-bottom2 {
-  padding: 50px ;
-  text-align: center;
-  background-color: $section-bottom2;
-}
-
+@import "section2";
 /* Конец 2 секции */
-
-.s_dark {
-  background-color: $section-bottom;
-  color: $white-color;
-  &:before {
-    background-image: url("../../img/bah_2.png");
-  }
-}
-
-.section_3 {
-  @extend .section_1
-}
-
-.s_dark {
-  .section-head {
-    p {
-      color: $section-bottom2;
-    }
-  }
-}
-
-.s_dark {
-  .section-bottom {
-    background-color: $main-head-color;
-    margin-top: 60px;
-  }
-}
-
-.s_dark {
-  .section-content {
-    min-height: 850px;
-    background-image: url("../../img/s3_sun_bg.png");
-    background-position: center;
-    padding-bottom: 0;
-    padding-top: 60px;
-  }
-}
-
-.s_dark {
-  .section-content {
-    .info-item {
-      margin-top: 80px;
-    }
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(1) .info-item {
-    margin-left: 80px;
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(2) .info-item {
-    margin-top: 0;
-    margin-left: 50px;
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(4) .info-item{
-    margin-top: 50px;
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(6) .info-item{
-    margin-top: 50px;
-    margin-left: 80px;
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(7) .info-item{
-    margin-left: 80px;
-  }
-}
-
-.s_dark{
-  .info-item-wrap:nth-child(8) .info-item{
-    margin-top: 150px;
-    margin-left: 50px;
-  }
-}
-
-.s3-img-wrap {
-  width: 130px;
-  height: 130px;
-  background-color: $main-color;
-  text-align: center;
-  border-radius: 10em;
-  margin: 57px 0 0 115px;
-  img {
-    width: 70px;
-    margin-top: 29px;
-  }
-}
-
+@import "section3";
 /* Конец 3 секции */
-
-.s-gray {
-  background-color: $section-bottom2;
-  h3 {
-    color: $main-head-color;
-  }
-}
-
-.s-gray {
-  &::before {
-    background-image: url("../../img/bah_3.png");
-  }
-}
-
-.s-gray {
-  .section-pb {
-    padding-bottom: 50px;
-  }
-}
-
-.s-gray {
-  .cards {
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .card {
-      display: inline-block;
-      transition: all 1.5s ease;
-      width: 260px;
-      background-color: $section-bottom;
-      margin: 10px 12px;
-      color: $forms-color1;
-      font-size: em(15px);
-      line-height: em(22px);
-      padding: 54px 28px 48px;
-      vertical-align: top;
-        .car-icon {
-          width: 120px;
-          height: 120px;
-          background-color: $main-color;
-          border-radius: 10em;
-          display: inline-block;
-          position: relative;
-          img {
-            width: 80px;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-          }
-        }
-      }
-  }
-}
-
-.s-gray {
-  .card {
-    h4 {
-      color: $section-bottom2;
-      font-family: "RalewaySemiBold";
-      font-size: em(18px);
-      margin-top: 25px;
-    }
-  }
-}
-
-.s-gray {
-  .card {
-    p {
-      margin-bottom: 0;
-      strong {
-        color: $main-color;
-      }
-    }
-  }
-}
-
-.s-gray {
-  .cards {
-    perspective: 600px;
-    .card {
-      &-off {
-        transform: rotateY(100deg);
-        opacity: 0;
-      }
-    }
-  }
-}
-
-
-.s-gray {
-  .cards {
-    perspective: 600px;
-    .card {
-      &-on {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.s-gray {
-  .section-bottom4 {
-    background-color: $section-bottom4;
-    margin-top: 60px;
-    padding: 50px ;
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-
-
-
+@import "section4";
+/* Конец 4 секции */
 
 @import "../../style/media";
