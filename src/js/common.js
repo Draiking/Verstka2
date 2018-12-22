@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    /* Всплывающие меню */
+
 	$(".toggle-menu").click(function () {
 		$(this).toggleClass("on");
 		$(".main-menu").slideToggle();
@@ -11,9 +13,14 @@ $(document).ready(function() {
 		})
 	});
 
-	$(".section-content .info-item").equalHeights();
-	$(".s1_bottom .info-item").equalHeights();
-	$(".s1_bottom .info-item").equalHeights();
+	/* Установление высоты и ширины блока */
+
+	$(".section-content .info-item").equalHeights(); /* 1 секция (НЕЗАВИСИМАЯ ОЦЕНКА ИМУЩЕСТВА) */
+	$(".s1_bottom .info-item").equalHeights(); /* раздел 1 секции */
+
+
+
+    /* Поочередная открытие карт */
 
 
 	$(".section_4").waypoint(function() {
