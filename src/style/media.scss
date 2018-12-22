@@ -3,6 +3,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+  /* header */
   .main-menu {
     display: block;
     min-width: 295px;
@@ -52,12 +53,12 @@
     height: 34px;
     top: 0px;
   }
-
+  /* 3 секция */
 
   .s3-img-wrap {
     margin-left: 82px;
   }
-
+  /* 4 секция */
   .s-gray {
     .section-bottom4 {
       margin-top: 30px;
@@ -77,7 +78,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  /* header */
   .main-menu {
     top: 50px;
   }
@@ -158,6 +159,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  /* 1 секция */
    .info-item {
      padding-left: 10px !important;
      height: auto !important;
@@ -171,7 +173,11 @@
      }
    }
 
-
+  .section-1 {
+    .section-content {
+      background-position: top;
+    }
+  }
 
   .s1-bottom{
     .info-item{
@@ -186,7 +192,7 @@
       }
    }
 
-
+  /* 3 секция */
   .section-3 {
     .section-content {
       padding-top: 10px;
@@ -198,19 +204,11 @@
     }
   }
 
-
-
-
-
-
-
-
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
-
+  /* header */
   .phone-wrap{
     .phone{
       font-size: em(16px);
@@ -227,12 +225,18 @@
     line-height: 34px;
    margin-top: 15px;
   }
-
+  /* 1 секция */
+  .section-1 {
+    .section-content {
+      background-position: bottom;
+    }
+  }
+  /* 2 секция */
   .s2-item-wrap {
     padding: 0 10px;
     width: 140px;
   }
-
+  /* 3 секция */
   .s-dark {
     .buttons {
       margin: 0 20px 0 20px;
@@ -244,13 +248,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
-
-
-
-
-
-
 
 }
 
@@ -279,6 +276,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1201px) {
+  /* header */
   .main-menu {
     display: block !important;
     outline: none !important;
