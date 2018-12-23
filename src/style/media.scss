@@ -297,3 +297,26 @@
     outline: none !important;
   }
 }
+.s3-img-wrap {
+  top: 20px;
+}
+
+
+
+
+@media only screen and (width : 1200px){
+  .s3-img-wrap {
+    margin-left: 115px;
+    top: 20px;
+  }
+}
+
+@media only screen and (width : 768px){
+  .s3-items-container {
+    .s3-items-wrap {
+      .info-item-wrap {
+        width: 47.333%;
+      }
+    }
+  }
+}
