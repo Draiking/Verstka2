@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    /* Всплывающие меню */
+
 	$(".toggle-menu").click(function () {
 		$(this).toggleClass("on");
 		$(".main-menu").slideToggle();
@@ -11,8 +13,25 @@ $(document).ready(function() {
 		})
 	});
 
+	/* Установление высоты и ширины блока */
 
+	$(".section-content .info-item").equalHeights(); /* 1 секция (НЕЗАВИСИМАЯ ОЦЕНКА ИМУЩЕСТВА) */
+	$(".s1-bottom .info-item").equalHeights(); /* раздел 1 секции */
 
+    /* Поочередная открытие карт */
+
+	$(".section-4").waypoint(function() {
+
+		$(".section-4 .card").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("card-off").addClass("card-on");
+			}, 200*index);
+		});
+
+	}, {
+		offset : "20%"
+	});
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
