@@ -10,5 +10,33 @@
   width: 290px;
   height: 128px;
   display: inline-block;
-  background-color: #0b0b0b;
+  margin-left: -40px;
+  vertical-align: top;
+  position: relative;
+  font-size: em(19px);
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.tc-content {
+  position: relative;
+  z-index: 1000;
+  margin-top: 43px;
+  margin-left: 55px;
+  text-align: left;
+  img {
+    width: 32px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.tc-content {
+  span {
+
+  }
 }
