@@ -28,8 +28,9 @@
   margin-top: 43px;
   margin-left: 55px;
   text-align: left;
+  padding-right: 20px;
   img {
-    width: 32px;
+    height: 32px;
     float: left;
     margin-right: 20px;
   }
@@ -37,6 +38,14 @@
 
 .tc-content {
   span {
+    font-size: em(20px);
+  }
+}
 
+.tc-item {
+  &:first-child{
+    .tc-content {
+      margin-left: 40px;
+    }
   }
 }
