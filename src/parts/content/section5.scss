@@ -1,5 +1,14 @@
 .triangles-container {
   color: $white-color;
-  font-size: em(22px);
+  font-size: em(19px);
   font-family: PFCentroSlabProMedium;
+  margin: 60px 0 70px;
+  text-align: center;
+}
+
+.tc-item {
+  width: 290px;
+  height: 128px;
+  display: inline-block;
+  background-color: #0b0b0b;
 }
