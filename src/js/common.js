@@ -32,6 +32,23 @@ $(document).ready(function() {
 	}, {
 		offset : "20%"
 	});
+	/* анимация 5 секции svg */
+	$(".section-5").waypoint(function () {
+		$(".section-5 .tc-item").each(function (index) {
+			var ths = $(this);
+			setTimeout(function () {
+				var myAnimation = new DrawFillSVG({
+					elementId: "tc-svg-"+ index
+				});
+				ths.removeClass("").addClass("");
+			}, 500 * index);
+		});
+
+	}, {
+		offset: "20%"
+	});
+
+
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

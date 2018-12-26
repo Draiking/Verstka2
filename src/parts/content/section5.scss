@@ -2,7 +2,7 @@
   color: $white-color;
   font-size: em(19px);
   font-family: PFCentroSlabProMedium;
-  margin: 60px 0 70px;
+  margin: 20px 0 70px;
   text-align: center;
 }
 
@@ -44,8 +44,9 @@
 
 .tc-item {
   &:first-child{
+    margin-left: 0;
     .tc-content {
-      margin-left: 40px;
+      margin-left: 45px;
     }
   }
 }

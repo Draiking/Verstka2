@@ -82,6 +82,18 @@
     }
   }
 
+  /* 5 секция */
+  .tc-item {
+    margin-bottom: 15px;
+  }
+  .triangles-container {
+    .tc-item {
+      &:first-child {
+        margin-left: -40px;
+      }
+    }
+  }
+
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -250,6 +262,14 @@
     .buttons {
       margin: 0 20px 0 20px;
       font-size: 15px;
+    }
+  }
+  /* 5 секция */
+  .section-5 {
+    .triangles-container {
+      .tc-item {
+        margin-left: 0;
+      }
     }
   }
 
