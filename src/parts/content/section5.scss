@@ -1,0 +1,52 @@
+.triangles-container {
+  color: $white-color;
+  font-size: em(19px);
+  font-family: PFCentroSlabProMedium;
+  margin: 20px 0 70px;
+  text-align: center;
+}
+
+.tc-item {
+  width: 290px;
+  height: 128px;
+  display: inline-block;
+  margin-left: -40px;
+  vertical-align: top;
+  position: relative;
+  font-size: em(19px);
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.tc-content {
+  position: relative;
+  z-index: 1000;
+  margin-top: 43px;
+  margin-left: 55px;
+  text-align: left;
+  padding-right: 20px;
+  img {
+    height: 32px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.tc-content {
+  span {
+    font-size: em(20px);
+  }
+}
+
+.tc-item {
+  &:first-child{
+    margin-left: 0;
+    .tc-content {
+      margin-left: 45px;
+    }
+  }
+}

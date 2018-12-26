@@ -19,7 +19,6 @@
   "homepage": "",
   "dependencies": {
     "bourbon": "^5.1.0"
-
   },
   "devDependencies": {
     "browser-sync": "2.24.7",
