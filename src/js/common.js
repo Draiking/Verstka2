@@ -40,7 +40,7 @@ $(document).ready(function() {
 				var myAnimation = new DrawFillSVG({
 					elementId: "tc-svg-"+ index
 				});
-				ths.removeClass("").addClass("");
+				ths.removeClass(".tc-content").addClass("tc-content-on");
 			}, 500 * index);
 		});
 

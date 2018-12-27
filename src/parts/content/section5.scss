@@ -2,7 +2,6 @@
   color: $white-color;
   font-size: em(19px);
   font-family: PFCentroSlabProMedium;
-  margin: 20px 0 70px;
   text-align: center;
 }
 
@@ -14,6 +13,8 @@
   vertical-align: top;
   position: relative;
   font-size: em(19px);
+  cursor: default;
+  transition: all .5s ease;
   svg {
     position: absolute;
     top: 0;
@@ -47,6 +48,17 @@
     margin-left: 0;
     .tc-content {
       margin-left: 45px;
+    }
+  }
+}
+
+.tc-item {
+  &:hover {
+    transform: scale(1.08);
+    z-index: 1010;
+    path {
+      fill-opacity: 0!important;
+      stroke-opacity: 1!important;
     }
   }
 }

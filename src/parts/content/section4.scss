@@ -19,55 +19,53 @@
   }
 }
 
+.s-gray {
+  .cards {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  .s-gray {
-    .cards {
-      text-align: center;
-      justify-content: center;
-      flex-wrap: wrap;
+    .card {
+      display: inline-block;
+      transition: all 1.5s ease;
+      width: 260px;
+      background-color: $section-bottom;
+      margin: 10px 12px;
+      color: $forms-color1;
+      font-size: em(15px);
+      line-height: em(22px);
+      padding: 54px 28px 48px;
+      vertical-align: top;
 
-      .card {
+      .car-icon {
+        width: 120px;
+        height: 120px;
+        background-color: $main-color;
+        border-radius: 10em;
         display: inline-block;
-        transition: all 1.5s ease;
-        width: 260px;
-        background-color: $section-bottom;
-        margin: 10px 12px;
-        color: $forms-color1;
-        font-size: em(15px);
-        line-height: em(22px);
-        padding: 54px 28px 48px;
-        vertical-align: top;
+        position: relative;
 
-        .car-icon {
-          width: 120px;
-          height: 120px;
-          background-color: $main-color;
-          border-radius: 10em;
-          display: inline-block;
+
+        img {
+          width: 80px;
           position: relative;
-
-
-
-          img {
-            width: 80px;
-            position: relative;
-            top: 67%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-          }
+          top: 67%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
         }
       }
     }
   }
+}
 
-  .section-4 {
-    .car-icon {
-      &:before {
-        display: none;
-      }
+.section-4 {
+  .car-icon {
+    &:before {
+      display: none;
     }
   }
+}
 
 .s-gray {
   .card {
