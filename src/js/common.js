@@ -21,7 +21,6 @@ $(document).ready(function() {
     /* Поочередная открытие карт */
 
 	$(".section-4").waypoint(function() {
-
 		$(".section-4 .card").each(function(index) {
 			var ths = $(this);
 			setInterval(function() {
@@ -47,7 +46,18 @@ $(document).ready(function() {
 	}, {
 		offset: "20%"
 	});
+	/* Поочередная открытие карт 6 */
+	$(".section-6").waypoint(function() {
+		$(".section-6 .team").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("team-off").addClass("team-on");
+			}, 200*index);
+		});
 
+	}, {
+		offset : "20%"
+	});
 
 
 	//Цели для Яндекс.Метрики и Google Analytics

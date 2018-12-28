@@ -30,6 +30,17 @@
   }
 }
 
+.s-gray {
+  .teams {
+    .team-on {
+      @extend .card-on;
+    }
+    .team-off {
+      @extend .card-off;
+    }
+  }
+}
+
 .team {
   p {
     font-size: em(15px);
@@ -60,4 +71,16 @@
 
 .s-gray .teams .team .car-icon img {
   width: 100%;
+}
+
+.section-4 {
+  .teams {
+    perspective: 600px;
+    .team {
+      &-off {
+        transform: rotateY(100deg);
+        opacity: 0;
+      }
+    }
+  }
 }
