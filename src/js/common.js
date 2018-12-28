@@ -58,6 +58,10 @@ $(document).ready(function() {
 	}, {
 		offset : "20%"
 	});
+	/* Карусель */
+	$(".slider").owlCarousel({
+		items : 1
+	})
 
 
 	//Цели для Яндекс.Метрики и Google Analytics
