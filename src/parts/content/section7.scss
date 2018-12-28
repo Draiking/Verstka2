@@ -1,12 +1,36 @@
 .section-7 {
   .owl-controls {
     text-align: center;
+    .owl-nav {
+      position: absolute;
+      top: 12%;
+      width: 100%;
+      &:hover {
+        div {
+          opacity: 1;
+        }
+      }
+      .owl-next {
+        right: 20px;
+        left: auto;
+        background-position: -16px 0;
+      }
+      div {
+        opacity: .4;
+        height: 29px;
+        width: 16px;
+        position: absolute;
+        left: 20px;
+        background-image: url("../../img/slider_arrows.png");
+        transition: all .25s ease;
+      }
+    }
     .owl-dot {
       text-align: center;
       display: inline-block;
       &.active {
         span {
-          background-color: #F39F18;
+          background-color: $main-color;
         }
       }
       span {
@@ -26,6 +50,7 @@
     .slide {
       text-align: center;
       margin-bottom: 40px;
+      position: relative;
       p {
         margin-top: 25px;
       }
