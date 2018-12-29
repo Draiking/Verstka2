@@ -6,20 +6,15 @@ $(document).ready(function() {
 		$(this).toggleClass("on");
 		$(".main-menu").slideToggle();
 	});
-
 	$(function () {
 		$('.toggle-menu').click(function () {
 			$(".main-menu").removeClass('d-block')
 		})
 	});
-
 	/* Установление высоты и ширины блока */
-
 	$(".section-content .info-item").equalHeights(); /* 1 секция (НЕЗАВИСИМАЯ ОЦЕНКА ИМУЩЕСТВА) */
 	$(".s1-bottom .info-item").equalHeights(); /* раздел 1 секции */
-
     /* Поочередная открытие карт */
-
 	$(".section-4").waypoint(function() {
 		$(".section-4 .card").each(function(index) {
 			var ths = $(this);
@@ -64,9 +59,7 @@ $(document).ready(function() {
 		nav : true,
 		navText : "",
 		loop : true,
-
 	})
-
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

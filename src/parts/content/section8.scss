@@ -1,3 +1,84 @@
 .section-8 {
-  .
+  padding-top: 80px;
+  .section-head {
+    margin-bottom: 50px;
+    h2 {
+      text-align: left;
+      margin-top: 0;
+      &::after {
+        transform: none;
+        left: 0;
+      }
+    }
+    p{
+      text-align: left;
+    }
+  }
+  .s8-items {
+    margin-bottom: 20px;
+    .s8-item {
+      text-align: center;
+      .img-wrap {
+        height: 72px;
+        &:before {
+          display: none;
+        }
+      }
+      img {
+        height: 72px;
+      }
+    }
+    p {
+      font-family: "RalewayBold";
+      font-size: em(13px);
+      line-height: em(19px);
+      margin-top: 18px;
+    }
+  }
+  .forms {
+    background-color: $section-8-button;
+    h4{
+      color: $section-bottom;
+      border-color: $bottom-color;
+    }
+    p{
+      color: $section-8-p;
+    }
+    input {
+      background-color: $section-8-input;
+      color: $bottom-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-8{
+    .forms {
+      .button-wrap {
+        button {
+          padding: 10px 10px;
+        }
+      }
+    }
+    .s8-left{
+      .section-head{
+        h2{
+          text-align: center;
+          &::after{
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .s8-item {
+    margin-bottom: 30px;
+  }
 }
