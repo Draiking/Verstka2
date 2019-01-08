@@ -3,17 +3,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  /* 5 секция */
-  .tc-item {
-    margin-bottom: 15px;
-  }
-  .triangles-container {
-    .tc-item {
-      &:first-child {
-        margin-left: -40px;
-      }
-    }
-  }
 
 }
 /* Medium Devices, Desktops */
@@ -27,14 +16,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  /* 5 секция */
-  .section-5 {
-    .triangles-container {
-      .tc-item {
-        margin-left: 0;
-      }
-    }
-  }
 
 }
 
