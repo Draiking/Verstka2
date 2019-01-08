@@ -89,38 +89,38 @@
 
   .owl-item {
     .img-wrap {
-      transition: all .7s ease;
+      transition: all .7s ease; /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
       opacity: 0;
-      transform: translate3d(200px, 0, 0);
-      transition-delay: .1s;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .1s; /* задержка при переходе анимации */
     }
     .slide-descr {
       opacity: 0;
-      transform: translate3d(200px, 0, 0);
-      transition-delay: .5s;
-      transition: all .7s ease;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease; /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
     }
     h3 {
       opacity: 0;
-      transform: translate3d(200px, 0, 0);
-      transition-delay: .5s;
-      transition: all .7s ease;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease;  /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
     }
     p{
       opacity: 0;
-      transform: translate3d(200px, 0, 0);
-      transition-delay: .5s;
-      transition: all .7s ease;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease;  /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
     }
     &.active {
       .img-wrap {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
       }
       .slide-descr, h3, p {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
-        transition-delay: .5s;
+        transform: translate3d(0, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+        transition-delay: .5s; /* задержка при переходе анимации */
       }
     }
   }
