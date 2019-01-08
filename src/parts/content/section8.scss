@@ -36,6 +36,7 @@
     }
   }
   .forms {
+    @extend .forms;
     background-color: $section-8-button;
     h4{
       color: $section-bottom;
