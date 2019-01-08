@@ -115,31 +115,26 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .section-8{
-    .forms {
-      .button-wrap {
-        button {
-          padding: 10px 10px;
+  .section-8 {
+    button {
+      padding: 10px 10px;
+    }
+
+    .section-head {
+      h2 {
+        text-align: center;
+        &::after {
+          left: 50%;
+          transform: translate(-50%, 0);
         }
       }
-    }
-    .s8-left{
-      .section-head{
-        h2{
-          text-align: center;
-          &::after{
-            left: 50%;
-            transform: translate(-50%, 0);
-          }
-        }
-        p{
-          text-align: center;
-        }
+      p {
+        text-align: center;
       }
     }
   }
-}
 
+}
 @media only screen and (max-width: 480px) {
   .s8-item {
     margin-bottom: 30px;
