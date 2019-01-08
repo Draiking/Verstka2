@@ -94,7 +94,19 @@
       transform: translate3d(200px, 0, 0);
       transition-delay: .1s;
     }
-    .slide-descr, h3, p {
+    .slide-descr {
+      opacity: 0;
+      transform: translate3d(200px, 0, 0);
+      transition-delay: .5s;
+      transition: all .7s ease;
+    }
+    h3 {
+      opacity: 0;
+      transform: translate3d(200px, 0, 0);
+      transition-delay: .5s;
+      transition: all .7s ease;
+    }
+    p{
       opacity: 0;
       transform: translate3d(200px, 0, 0);
       transition-delay: .5s;
