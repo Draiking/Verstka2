@@ -1,4 +1,9 @@
 .section-7 {
+  background-color: $section-bottom2;
+  &:before {
+    background-image: url(../../img/bah_3.png);
+  }
+
 
   p {
     text-align: center;
