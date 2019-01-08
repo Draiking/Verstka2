@@ -1,132 +1,106 @@
-
-.s-gray {
-  background-color: $section-bottom2;
-
-  h3 {
-    color: $main-head-color;
-  }
-}
-
-.s-gray {
+.section-4 {
   &::before {
     background-image: url("../../img/bah_3.png");
   }
-}
+  background-color: $section-bottom2;
+  h3 {
+    color: $main-head-color;
+    text-align: center;
+  }
 
-.s-gray {
   .section-pb {
     padding-bottom: 50px;
   }
-}
 
-.s-gray {
   .cards {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-
-    .card {
-      display: inline-block;
-      transition: all 1.5s ease;
-      width: 260px;
-      background-color: $section-bottom;
-      margin: 10px 12px;
-      color: $forms-color1;
-      font-size: em(15px);
-      line-height: em(22px);
-      padding: 54px 28px 48px;
-      vertical-align: top;
-
-      .car-icon {
-        width: 120px;
-        height: 120px;
-        background-color: $main-color;
-        border-radius: 10em;
-        display: inline-block;
-        position: relative;
-
-
-        img {
-          width: 80px;
-          position: relative;
-          top: 67%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          display: block;
-        }
-      }
-    }
+    perspective: 600px;
   }
-}
 
-.section-4 {
-  .car-icon {
-    &:before {
-      display: none;
-    }
-  }
-}
-
-.s-gray {
   .card {
+    display: inline-block;
+    transition: all 1.5s ease;
+    width: 260px;
+    background-color: $section-bottom;
+    margin: 10px 12px;
+    color: $forms-color1;
+    font-size: em(15px);
+    line-height: em(22px);
+    padding: 54px 28px 48px;
+    vertical-align: top;
+    &-off {
+      transform: rotateY(100deg);
+      opacity: 0;
+    }
+    &-on {
+      opacity: 1;
+    }
     h4 {
       color: $section-bottom2;
       font-family: "RalewaySemiBold";
       font-size: em(18px);
       margin-top: 25px;
     }
-  }
-}
-
-.s-gray {
-  .card {
     p {
       margin-bottom: 0;
-
-      strong {
-        color: $main-color;
-      }
+    }
+    strong {
+      color: $main-color;
     }
   }
-}
 
-.s-gray {
-  .cards {
-    perspective: 600px;
-
-    .card {
-      &-off {
-        transform: rotateY(100deg);
-        opacity: 0;
-      }
+  .car-icon {
+    width: 120px;
+    height: 120px;
+    background-color: $main-color;
+    border-radius: 10em;
+    display: inline-block;
+    position: relative;
+    &:before {
+      display: none;
+    }
+    img {
+      width: 80px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
     }
   }
-}
 
-.s-gray {
-  .cards {
-    perspective: 600px;
-
-    .card {
-      &-on {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.s-gray {
   .section-bottom4 {
     background-color: $section-bottom4;
     margin-top: 60px;
     padding: 50px;
     text-align: center;
   }
+
 }
+@media only screen and (max-width : 1200px) {
+  .section-4 {
 
+    .section-bottom4 {
+      margin-top: 30px;
+    }
 
+    .section-pb {
+      .container {
+        width: 100%;
+      }
+    }
 
-
+  }
+}
+@media only screen and (max-width : 992px) {
+  .section-4 {
+    .section-bottom4 {
+      margin-top: 0px;
+    }
+  }
+}
 
 
 

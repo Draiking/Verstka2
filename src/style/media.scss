@@ -3,21 +3,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  /* 4 секция */
-  .s-gray {
-    .section-bottom4 {
-      margin-top: 30px;
-    }
-  }
-
-  .s-gray {
-    .section-pb {
-      .container {
-        width: 100%;
-      }
-    }
-  }
-
   /* 5 секция */
   .tc-item {
     margin-bottom: 15px;
@@ -33,12 +18,6 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-/* Секция 4 */
-  .s-gray {
-    .section-bottom4 {
-      margin-top: 0px;
-    }
-  }
 
 }
 /* Small Devices, Tablets */
