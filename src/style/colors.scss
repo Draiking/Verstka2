@@ -28,3 +28,32 @@ $color-sec-5: #6e7b8b;
 $section-8-button: #dddddd;
 $section-8-p: #5e6267;
 $section-8-input: #c0c0c0;
+
+
+
+
+
+
+
+.forms {
+  @extend .forms;
+  background-color: $section-8-button;
+  h4{
+    color: $section-bottom;
+    border-color: $bottom-color;
+  }
+  p{
+    color: $section-8-p;
+  }
+  input {
+    background-color: $section-8-input;
+    color: $bottom-color;
+  }
+}
+
+
+
+
+
+
+

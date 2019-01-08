@@ -1,6 +1,6 @@
 .section-8 {
-  background-color: $white-color;
   padding-top: 80px;
+
   .section-head {
     margin-bottom: 50px;
     h2 {
@@ -15,20 +15,13 @@
       text-align: left;
     }
   }
+
   .s8-items {
     margin-bottom: 20px;
-    .s8-item {
-      text-align: center;
-      .img-wrap {
-        height: 72px;
-        &:before {
-          display: none;
-        }
-      }
-      img {
-        height: 72px;
-      }
-    }
+  }
+
+  .s8-item {
+    text-align: center;
     p {
       font-family: "RalewayBold";
       font-size: em(13px);
@@ -36,21 +29,89 @@
       margin-top: 18px;
     }
   }
-  .forms {
-    @extend .forms;
-    background-color: $section-8-button;
-    h4{
-      color: $section-bottom;
-      border-color: $bottom-color;
+
+  .img-wrap {
+    height: 72px;
+    img {
+      height: 72px;
     }
-    p{
-      color: $section-8-p;
-    }
-    input {
-      background-color: $section-8-input;
-      color: $bottom-color;
+    &:before {
+      display: none;
     }
   }
+
+
+
+  .forms {
+    opacity: 0.8;
+    background-color: $section-8-button;
+    padding: 35px 35px;
+    color: $forms-color1;
+    font-size: em(14px);
+    border-bottom: $forms-color2 3px solid;
+    margin: 10px;
+    h4 {
+      color: $section-bottom;
+      font-family: "PFCFentroSlabProMedium";
+      font-size: em(34px);
+      text-transform: none;
+      margin: 0 0 3px;
+      border-color: $bottom-color;
+    }
+    p {
+      color: $section-8-p;
+      line-height: em(23px);
+      margin-top: 15px;
+    }
+    label {
+      margin-top: 22px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    span {
+      display: block;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
+      color: $span-color;
+    }
+    input {
+      color: $bottom-color;
+      font-size: 17px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-top: 3px $input-color1 solid;
+      background-color: $section-8-input;
+      text-indent: 10px;
+      padding: 7px 0;
+      &:focus {
+        background-color: $input-focus;
+      }
+    }
+  }
+
+  .button-wrap {
+    text-align: center;
+    button {
+      display: inline-block;
+      border: none;
+      background-color: $main-color;
+      color: $button-color1;
+      font-size: em(22px);
+      font-family: "PFCentroSlabProBold";
+      padding: 12px 30px;
+      border-bottom: 3px $bottom-button-color solid;
+      margin-top: 10px;
+      transition: all 5s ease;
+      &:hover {
+        background-color: $button-color-hover;
+      }
+      &:active {
+        background-color: $button-color-active;
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
