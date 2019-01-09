@@ -23,20 +23,20 @@ h2 {
   display: inline-block;
   border: none;
   background-color: $main-color;
-  color: $button-color1;
+  color: $button-color-dark2;
   font-size: em(22px);
   font-family: "PFCentroSlabProBold";
   padding: 12px 30px;
-  border-bottom: 3px $bottom-button-color solid;
+  border-bottom: 3px $bottom-button-orange solid;
   margin-top: 10px;
   transition: all .5s ease;
   text-decoration: none;
   &:hover{
-    background-color: $button-color-hover;
-    color: $button-color1 ;
+    background-color: $button-color-yellow;
+    color: $button-color-dark2 ;
     &:active {
-      background-color: $button-color-active;
-      color: $button-color1;
+      background-color: $button-navy-yellow-active;
+      color: $button-color-dark2;
     }
   }
 }

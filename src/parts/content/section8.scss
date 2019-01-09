@@ -44,22 +44,22 @@
 
   .forms {
     opacity: 0.8;
-    background-color: $section-8-button;
+    background-color: $section8-white-button;
     padding: 35px 35px;
-    color: $forms-color1;
+    color: $forms-color-gray;
     font-size: em(14px);
-    border-bottom: $forms-color2 3px solid;
+    border-bottom: $forms-color-dark2 3px solid;
     margin: 10px;
     h4 {
-      color: $section-bottom;
+      color: $section-bottom-blue;
       font-family: "PFCFentroSlabProMedium";
       font-size: em(34px);
       text-transform: none;
       margin: 0 0 3px;
-      border-color: $bottom-color;
+      border-color: $bottom-color-dark;
     }
     p {
-      color: $section-8-p;
+      color: $section8-gray-p;
       line-height: em(23px);
       margin-top: 15px;
     }
@@ -72,20 +72,20 @@
       display: block;
       letter-spacing: 1.5px;
       margin-bottom: 4px;
-      color: $span-color;
+      color: $span-color-gray;
     }
     input {
-      color: $bottom-color;
+      color: $bottom-color-dark;
       font-size: 17px;
       display: block;
       width: 100%;
       border: none;
-      border-top: 3px $input-color1 solid;
-      background-color: $section-8-input;
+      border-top: 3px $input-color-navy-blue solid;
+      background-color: $section8-gray-input;
       text-indent: 10px;
       padding: 7px 0;
       &:focus {
-        background-color: $input-focus;
+        background-color: $input-focus-blue;
       }
     }
   }
@@ -96,18 +96,18 @@
       display: inline-block;
       border: none;
       background-color: $main-color;
-      color: $button-color1;
+      color: $button-color-dark2;
       font-size: em(22px);
       font-family: "PFCentroSlabProBold";
       padding: 12px 30px;
-      border-bottom: 3px $bottom-button-color solid;
+      border-bottom: 3px $bottom-button-orange solid;
       margin-top: 10px;
       transition: all 5s ease;
       &:hover {
-        background-color: $button-color-hover;
+        background-color: $button-color-yellow;
       }
       &:active {
-        background-color: $button-color-active;
+        background-color: $button-navy-yellow-active;
       }
     }
   }

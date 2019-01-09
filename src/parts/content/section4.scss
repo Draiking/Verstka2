@@ -2,9 +2,9 @@
   &::before {
     background-image: url("../../img/bah_3.png");
   }
-  background-color: $section-bottom2;
+  background-color: $section-bottom2-white;
   h3 {
-    color: $main-head-color;
+    color: $dim-blue-color;
     text-align: center;
   }
 
@@ -23,9 +23,9 @@
     display: inline-block;
     transition: all 1.5s ease;
     width: 260px;
-    background-color: $section-bottom;
+    background-color: $section-bottom-blue;
     margin: 10px 12px;
-    color: $forms-color1;
+    color: $forms-color-gray;
     font-size: em(15px);
     line-height: em(22px);
     padding: 54px 28px 48px;
@@ -38,7 +38,7 @@
       opacity: 1;
     }
     h4 {
-      color: $section-bottom2;
+      color: $section-bottom2-white;
       font-family: "RalewaySemiBold";
       font-size: em(18px);
       margin-top: 25px;
@@ -72,7 +72,7 @@
   }
 
   .section-bottom4 {
-    background-color: $section-bottom4;
+    background-color: $section-bottom4-white;
     margin-top: 60px;
     padding: 50px;
     text-align: center;

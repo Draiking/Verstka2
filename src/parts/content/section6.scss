@@ -19,17 +19,17 @@
   }
   .team {
     @extend .card;
-    background-color: $section-bottom2;
+    background-color: $section-bottom2-white;
   }
 
   .team {
     p {
       font-size: em(15px);
-      color: $color-sec-5;
+      color: $color-sec5-gray;
     }
     h4 {
       margin-top: 35px;
-      color: $button-color1;
+      color: $button-color-dark2;
       text-transform: none;
       margin-bottom: 10px;
     }
@@ -37,7 +37,7 @@
 
   .team-phone {
     font-size: em(22px);
-    color: $button-color1;
+    color: $button-color-dark2;
     display: inline-block;
     margin-top: 15px;
   }
@@ -51,7 +51,7 @@
   .car-icon {
     overflow: hidden;
     line-height: 0;
-    box-shadow: 0 0 0 4px $section-bottom4;
+    box-shadow: 0 0 0 4px $section-bottom4-white;
     img {
       width: 100%;
     }

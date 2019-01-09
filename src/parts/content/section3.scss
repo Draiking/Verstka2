@@ -1,5 +1,5 @@
 .section-3 {
-  background-color: $section-bottom;
+  background-color: $section-bottom-blue;
   color: $white-color;
   &:before {
     background-image: url("../../img/bah_2.png");
@@ -13,7 +13,7 @@
 
   .section-head {
     p {
-      color: $section-bottom2;
+      color: $section-bottom2-white;
     }
   }
 
@@ -71,7 +71,7 @@
   }
 
   .section-bottom {
-    background-color: $main-head-color;
+    background-color: $dim-blue-color;
     margin-top: 60px;
   }
 }

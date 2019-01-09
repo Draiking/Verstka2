@@ -1,5 +1,5 @@
 .section-7 {
-  background-color: $section-bottom2;
+  background-color: $section-bottom2-white;
   &:before {
     background-image: url(../../img/bah_3.png);
   }
@@ -28,7 +28,7 @@
       width: 15px;
       height: 15px;
       margin: 0 2px;
-      background-color: $section-bottom4;
+      background-color: $section-bottom4-white;
       display: inline-block;
       border-radius: 10em;
     }
@@ -84,7 +84,7 @@
   }
 
   .slide-descr {
-    color: $color-sec-5;
+    color: $color-sec5-gray;
   }
 
   .owl-item {

@@ -1,6 +1,6 @@
 .homesect {
   padding-top: 70px;
-  background-color: $homesect-color;
+  background-color: $homesect-white;
   position: relative;
   font-size: em(17px);
   width: 100%;
@@ -59,7 +59,7 @@
     margin: 54px 0;
     font-family: RalewayRegular;
     p {
-      border-bottom: $border-p 1px solid;
+      border-bottom: $border-p-white 1px solid;
       padding-bottom: 20px;
       font-size: em(16px);
     }
@@ -114,13 +114,13 @@
 
   .s1-bottom {
     padding: 15px 0 65px;
-    background-color: $main-head-color;
+    background-color: $dim-blue-color;
     .info-item {
       margin: 15px 0 0;
     }
     p {
       color: $white-color;
-      border-bottom: $border-p1 1px solid;
+      border-bottom: $border-p-gray 1px solid;
     }
     .info-item-wrap:nth-child(2) {
       .info-item {
@@ -130,12 +130,12 @@
   }
 
   .section-bottom {
-    background-color: $section-bottom;
+    background-color: $section-bottom-blue;
     padding: 50px 0;
     text-align: center;
     a {
       text-decoration: none;
-      color: $button-color1;
+      color: $button-color-dark2;
     }
   }
 
