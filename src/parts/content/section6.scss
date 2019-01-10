@@ -1,0 +1,71 @@
+.section-6 {
+  @extend .section-4;
+  background-color: $white-color;
+  &:before {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    background-image: url(../../img/bah_1.png);
+  }
+
+  .section-head {
+    text-align: center;
+  }
+
+  .teams {
+    @extend .cards;
+  }
+  .team {
+    @extend .card;
+    background-color: $section-bottom2-white;
+  }
+
+  .team {
+    p {
+      font-size: em(15px);
+      color: $color-sec5-gray;
+    }
+    h4 {
+      margin-top: 35px;
+      color: $button-color-dark2;
+      text-transform: none;
+      margin-bottom: 10px;
+    }
+  }
+
+  .team-phone {
+    font-size: em(22px);
+    color: $button-color-dark2;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .img-wrap {
+    &:before {
+      display: none;
+    }
+  }
+
+  .car-icon {
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 0 0 4px $section-bottom4-white;
+    img {
+      width: 100%;
+    }
+  }
+
+  .teams {
+    perspective: 600px;
+    .team {
+      &-off {
+        transform: rotateY(100deg);
+        opacity: 0;
+      }
+    }
+  }
+
+}
+

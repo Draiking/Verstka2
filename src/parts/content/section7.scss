@@ -1,0 +1,135 @@
+.section-7 {
+  background-color: $section-bottom2-white;
+  &:before {
+    background-image: url(../../img/bah_3.png);
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .owl-controls {
+    text-align: center;
+  }
+
+  .owl-dots {
+    padding-bottom: 10px;
+  }
+
+  .owl-dot {
+    text-align: center;
+    display: inline-block;
+    &.active {
+      span {
+        background-color: $main-color;
+      }
+    }
+    span {
+      width: 15px;
+      height: 15px;
+      margin: 0 2px;
+      background-color: $section-bottom4-white;
+      display: inline-block;
+      border-radius: 10em;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    &:hover {
+      div {
+        opacity: 1;
+      }
+    }
+    .owl-next {
+      right: 20px;
+      left: auto;
+      background-position: -16px 0;
+    }
+    div {
+      opacity: .4;
+      height: 29px;
+      width: 16px;
+      position: absolute;
+      left: 20px;
+      background-image: url("../../img/slider_arrows.png");
+      transition: all .25s ease;
+    }
+  }
+
+  .slide {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    p {
+      margin-top: 25px;
+    }
+    h3 {
+      font-size: em(24px);
+      text-transform: none;
+      margin-bottom: 15px;
+    }
+  }
+
+  .img-wrap {
+    width: 116px;
+    height: 116px;
+    display: inline-block;
+    border-radius: 10em;
+    overflow: hidden;
+    box-shadow: 0 0 0 7px $main-color;
+    margin: 10px;
+  }
+
+  .slide-descr {
+    color: $color-sec5-gray;
+  }
+
+  .owl-item {
+    .img-wrap {
+      transition: all .7s ease; /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
+      opacity: 0;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .1s; /* задержка при переходе анимации */
+    }
+    .slide-descr {
+      opacity: 0;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease; /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
+    }
+    h3 {
+      opacity: 0;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease;  /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
+    }
+    p{
+      opacity: 0;
+      transform: translate3d(200px, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      transition-delay: .5s; /* задержка при переходе анимации */
+      transition: all .7s ease;  /* позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени */
+    }
+    &.active {
+      .img-wrap {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+      }
+      .slide-descr, h3, p {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); /*сдвиг элемента на заданное значение одновременно по осям X, Y, Z в трехмерном пространстве.*/
+        transition-delay: .5s; /* задержка при переходе анимации */
+      }
+    }
+  }
+
+}
+@media only screen and (max-width : 480px) {
+  .section-7 {
+    .owl-nav {
+      top: 8%;
+    }
+  }
+}

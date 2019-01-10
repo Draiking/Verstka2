@@ -1,52 +1,95 @@
-.triangles-container {
-  color: $white-color;
-  font-size: em(19px);
-  font-family: PFCentroSlabProMedium;
-  margin: 20px 0 70px;
-  text-align: center;
-}
-
-.tc-item {
-  width: 290px;
-  height: 128px;
-  display: inline-block;
-  margin-left: -40px;
-  vertical-align: top;
-  position: relative;
-  font-size: em(19px);
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.section-5  {
+  .triangles-container {
+    color: $white-color;
+    font-size: em(19px);
+    font-family: PFCentroSlabProMedium;
+    text-align: center;
   }
-}
 
-.tc-content {
-  position: relative;
-  z-index: 1000;
-  margin-top: 43px;
-  margin-left: 55px;
-  text-align: left;
-  padding-right: 20px;
-  img {
-    height: 32px;
-    float: left;
-    margin-right: 20px;
+  .tc-item {
+    width: 290px;
+    height: 128px;
+    display: inline-block;
+    margin-left: -40px;
+    vertical-align: top;
+    position: relative;
+    font-size: em(19px);
+    cursor: default;
+    transition: all .5s ease;
+    margin-bottom: 30px;
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
   }
-}
 
-.tc-content {
-  span {
-    font-size: em(20px);
+  .tc-content {
+    position: relative;
+    z-index: 1000;
+    margin-top: 43px;
+    margin-left: 55px;
+    text-align: left;
+    padding-right: 20px;
+    img {
+      height: 32px;
+      float: left;
+      margin-right: 20px;
+    }
+    span {
+      font-size: em(20px);
+    }
   }
-}
 
-.tc-item {
-  &:first-child{
-    margin-left: 0;
-    .tc-content {
-      margin-left: 45px;
+  .tc-item {
+    &:first-child{
+      margin-left: 0;
+      .tc-content {
+        margin-left: 45px;
+      }
+    }
+  }
+
+  .tc-item {
+    &:hover {
+      transform: scale(1.08);
+      z-index: 1010;
+      path {
+        fill-opacity: 0!important;
+        stroke-opacity: 1!important;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width : 1200px) {
+  .section-5 {
+    .tc-item {
+      margin-bottom: 15px;
+      &:first-child {
+        margin-left: -40px;
+      }
     }
   }
 }
+@media only screen and (max-width : 992px) {
+  .section-5{
+    .tc-item {
+    }
+  }
+}
+@media only screen and (max-width : 620px) {
+  .section-5 {
+    .triangles-container {
+      .row {
+        padding: 0 10%;
+      }
+      .tc-item {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+

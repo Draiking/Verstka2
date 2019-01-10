@@ -6,22 +6,16 @@ $(document).ready(function() {
 		$(this).toggleClass("on");
 		$(".main-menu").slideToggle();
 	});
-
 	$(function () {
 		$('.toggle-menu').click(function () {
 			$(".main-menu").removeClass('d-block')
 		})
 	});
-
 	/* Установление высоты и ширины блока */
-
 	$(".section-content .info-item").equalHeights(); /* 1 секция (НЕЗАВИСИМАЯ ОЦЕНКА ИМУЩЕСТВА) */
 	$(".s1-bottom .info-item").equalHeights(); /* раздел 1 секции */
-
     /* Поочередная открытие карт */
-
 	$(".section-4").waypoint(function() {
-
 		$(".section-4 .card").each(function(index) {
 			var ths = $(this);
 			setInterval(function() {
@@ -40,15 +34,32 @@ $(document).ready(function() {
 				var myAnimation = new DrawFillSVG({
 					elementId: "tc-svg-"+ index
 				});
-				ths.removeClass("").addClass("");
+				ths.removeClass(".tc-content").addClass("tc-content-on");
 			}, 500 * index);
 		});
 
 	}, {
 		offset: "20%"
 	});
+	/* Поочередная открытие карт 6 */
+	$(".section-6").waypoint(function() {
+		$(".section-6 .team").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("team-off").addClass("team-on");
+			}, 200*index);
+		});
 
-
+	}, {
+		offset : "20%"
+	});
+	/* Карусель */
+	$(".slider").owlCarousel({
+		items : 1,
+		nav : true,
+		navText : "",
+		loop : true,
+	})
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
