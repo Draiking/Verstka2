@@ -1,0 +1,8 @@
+.main-footer{
+  background-color: $section-bottom-blue;
+  padding-bottom: 60px;
+  &::before {
+    background-image: url(../../img/bah_2.png);
+  }
+
+}
